@@ -1,0 +1,8 @@
+div#myId{
+    background-color: rgb(58, 94, 53);
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+}
