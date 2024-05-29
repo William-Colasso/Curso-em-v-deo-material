@@ -1,0 +1,14 @@
+#resultado{
+    background-color: rgb(34, 82, 185);
+    color: white;
+    font-size: 25px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.titulo{
+    background-color: aquamarine;
+    width: 650px;
+    border: 50px;
+    border-radius: 30px;
+}
