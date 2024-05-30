@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(236, 215, 186);
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    color: #687777;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.356);
+}
+footer{
+    text-align: center;
+    color: #687777;
+    font-style: italic;
+}
