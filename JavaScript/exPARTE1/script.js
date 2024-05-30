@@ -5,8 +5,12 @@ function carregar(){
     var data = new Date
     var hora = data.getHours()
     var minutos = data.getMinutes()
-
-    msg.innerHTML = `A hora atual é: ${hora}:${minutos} `
+    if(minutos<10){
+        msg.innerHTML = `A hora atual é: ${hora}:0${minutos} `
+    }
+    else{
+        msg.innerHTML = `A hora atual é: ${hora}:${minutos} `
+    }
 
     if(hora<12){
         img.inne= 'manha.png'
