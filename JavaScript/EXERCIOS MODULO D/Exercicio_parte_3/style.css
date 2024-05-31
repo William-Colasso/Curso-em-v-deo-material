@@ -21,3 +21,17 @@ footer{
     color: #687777;
     font-style: italic;
 }
+
+#calcular{
+    padding: 15px;
+    color: black;
+    background-color: aquamarine;
+    border: 2px white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#ano{
+    padding: 7px;
+    border-radius: 15px;
+}
