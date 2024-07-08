@@ -19,3 +19,30 @@ function getNumeroInteiroAleatorio(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min; // O máximo e o mínimo são inclusivos
 }
+
+
+function calcular(){
+    var inicio = document.getElementById('inicio').value;
+    var inicio2 = Number(inicio); // Conversão para número
+    var final = Number(document.getElementById('final').value); 
+    var passo = Number(document.getElementById('passos').value); 
+    var resultado = document.getElementById('resultado');
+    var auxi = "";
+    
+
+    if (passo <= 0) {
+        alert("O passo não pode ser zero.");
+        return;
+    }
+    
+
+    else{
+        for (let i = inicio2; i < final; i += passo) {
+            auxi = auxi + String(i) + "👉"
+        }
+    }
+    
+
+    auxi = auxi + "🏁"
+    resultado.innerHTML = auxi
+}
