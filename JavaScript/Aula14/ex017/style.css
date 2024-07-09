@@ -19,3 +19,11 @@ footer{
     color: #687777;
     font-style: italic;
 }
+
+#resultado{
+    margin-top: 20px;
+    color: black;
+}
+#titulo{
+    color: black;
+}
