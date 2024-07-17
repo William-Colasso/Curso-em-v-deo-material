@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(236, 215, 186);
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    color: #687777;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.356);
+
+}
+footer{
+    text-align: center;
+    color: #687777;
+    font-style: italic;
+}
+
+
+.cima{
+    display: flex;
+    flex-direction: row;
+}
+#input{
+    margin: 10px;
+    height: 20px;
+}
+
+#lancar{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+#lancar:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+#lancar:active{
+    color: black;
+    background-color: white;
+}
+#saida{
+    height: 300px;
+    width: 150px;
+    
+}
+#estat{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+#estat:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+    
+}
+#estat:active{
+    color: black;
+    background-color: white;
+}
