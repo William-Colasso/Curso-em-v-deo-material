@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outras formatações</title>
+  </head>
+  <body>
+    <h1>Outra formatações no HTML</h1>
+
+    <h2>Código</h2>
+
+    <p>Existem formatações para a presentação de código</p>
+    <p>Exemplo, sem formatação: document.getElementById('id') (JavaScript)</p>
+    <p>
+      Exemplo, com formatação(tag &ltcode&gt):
+      <code>document.getElementById('id')</code> (JavaScript)
+    </p>
+
+    <p>
+      Também podemos colocar um bloco de código inteiro,
+      <strong>exemplo:</strong>
+    </p>
+    <pre>
+    
+        <code>
+function copy(id) {
+    var output = document.getElementById(id).value;
+    var copy = document.getElementById("copy");
+    try {
+        navigator.clipboard.writeText(output);
+        copy.innerText = "Copied!";
+        copy.style.color = "white";
+
+        setTimeout(async () => {
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "hidden") {
+            copy.innerHTML = "Copy";
+            copy.style.color = "#12a525";
+            } else if (document.visibilityState === "visible") {
+            }
+        });
+        }, 300);
+    } catch (err) {
+        console.error("Copying Error" + err);
+    }
+
+    }
+    
+        </code>
+    </pre>
+
+    <h2>Citação</h2>
+
+    <p>
+      Podemos usar a tag &ltq&gt para fazer uma citação,
+      <strong>exemplo:</strong>
+    </p>
+    <q
+      >Não importa o que o mundo diz de mim, o que importa é que eu nunca fiz
+      nada que contrariasse os meus princípios e nunca farei.</q
+    >
+    <p>-Rononoa, Zoro xxxx</p>
+
+    <h3>Citações completas</h3>
+    <p>
+      Também podemos fazer uma citação inteira de um autor(um bloco),
+      <strong>exemplo:</strong>
+    </p>
+
+    <p>Como disse Machado de Assis, em seu livro Helena :</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Helena/tHK6EAAAQBAJ?hl=en&gbpv=1&dq=machado+de+assis&printsec=frontcover">
+      Assentou-se logo ali que o casamento seria celebrado na primeira semana de
+      março. Os dois meses de intervalo foram destinados às formalidades
+      eclesiásticas e ao preparo do enxoval. Estácio aceitou tudo sem objeção.
+      D. Úrsula e Helena aprovaram o plano. A primeira acrescentou uma cláusula:
+      — os noivos viriam morar com elas em Andaraí.
+    </blockquote>
+
+
+
+    <h2>Abreviações</h2>
+
+    <p>Podemos indicar pelo HTMl que estamos fazendo o uso de uma abreviação ou sigle, usando a tag &ltabbr&gt, <strong>exemplo:</strong></p>
+
+    <p>O <abbr title="Hyper Text Markup Leanguage">HTML</abbr>, <abbr title="Cascanding Style Sheets">CSS</abbr> e <abbr title="JavaScript">JS</abbr> são tecnologias WEB.</p>
+
+
+    <h2>Texto invertido</h2>
+
+    <p>É possível inverter um texto com a tag &lt bdo dir="rtl ou ltr" &gt</p>
+
+    <p><bdo dir="rtl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt reiciendis placeat dolorum, necessitatibus voluptatibus quam, est numquam cum sapiente iusto itaque dolore, id vero vel officiis eius! Accusantium, ab libero.</bdo></p>
+  </body>
+</html>
